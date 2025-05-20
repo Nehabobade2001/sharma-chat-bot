@@ -15,8 +15,8 @@ connectDB();
 // Middleware
 app.use(cors({
   origin: [
-    'https://chat-frontend-dqypt5zvy-nehas-projects-5d72b518.vercel.app',
-    'https://chat-frontend-dqypt5zvy-nehas-projects-5d72b518.vercel.app'
+    'https://chat-frontend-jx9f.vercel.app',
+    'https://chat-frontend-jx9f.vercel.app'
   ],
   credentials: true
 }));
