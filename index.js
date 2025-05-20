@@ -14,10 +14,13 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL, // <-- use your frontend URL from .env
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: [
+    'https://chat-frontend-dqypt5zvy-nehas-projects-5d72b518.vercel.app',
+    'https://chat-frontend-dqypt5zvy-nehas-projects-5d72b518.vercel.app'
+  ],
   credentials: true
 }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
